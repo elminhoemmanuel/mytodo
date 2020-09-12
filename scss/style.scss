@@ -1,0 +1,183 @@
+@use 'config';
+@use 'buttons';
+@use 'responsive';
+
+// general stylings
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(120deg,#dfc05b,#e7927b);
+    color: white;
+    font-family: config.$font-stack;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center !important;
+    align-items: center !important;
+    min-height: 20vh;
+    padding-top: 4%;
+    div{
+        margin-top:6%;
+        width: 60%;
+        font-size: 0.8rem;
+    }
+}
+
+.quote-div{
+    display: none;
+}
+
+
+form{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    min-height: 20vh;
+}
+
+form{
+
+    input,button{
+        padding: 0.5rem;
+        font-size: 2 rem;
+        border: none;
+        background:white;
+    }
+
+    button{
+        color: #e7927b;
+        background:white;
+        cursor: pointer;
+        transition: all 0.3 ease;
+
+        &:hover{
+            background: #e7927b;
+            color: white;
+        }
+    }
+
+    select{
+        @include config.appearance-clear(config.$null);
+        outline: none;
+        border: none;
+        color: config.$primary-color;
+        width: 10rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .select{
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+        
+
+        &::after{
+            content:"\25BC";
+            position: absolute;
+            background:config.$primary-color;
+            top: 0;
+            right: 0;
+            padding: 0.5rem !important;
+            pointer-events: none;
+            transition:all 0.3s ease;
+        }
+
+        &:hover::after{
+            background:white;
+            color: config.$primary-color;
+        }
+    }
+}
+
+.todo-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    .todo-list{
+        min-width: 25%;
+        list-style-type: none;  
+    }
+
+    .todo{
+        margin: 1rem;
+        background:white;
+        display: flex;
+        color: black;
+        font-size: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        transition:all 0.5s ease;
+
+        li{
+            flex: 1;
+        }
+
+        button{
+            background: #f77e5d;
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+
+        }
+
+        .complete-btn{
+            background:rgb(73,204,73);
+        }
+
+        &-item{
+            padding: 0rem 0.5rem;
+        }
+
+        .fa-check, .fa-trash{
+            pointer-events: none;
+        }
+
+        
+    }
+
+    .completed{
+        text-decoration: line-through;
+        opacity: 0.5;
+    }
+
+    .fall{
+        transform: translateY(8rem) rotateZ(30deg);
+        opacity: 0;
+    }
+
+}
+
+.refresh{
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    button{
+        padding: 1% 6%;
+        background:#f77e5d;
+        border-radius: 5px;
+        color: white;
+        border: none;
+
+        &:hover{
+            background:#d16c50;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+

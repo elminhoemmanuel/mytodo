@@ -1,0 +1,11 @@
+$font-stack: "Poppins", sans-serif;
+$primary-color:#e7927b;
+$secondary-color:#dfc05b;
+$null:none;
+
+// mixin for select
+@mixin appearance-clear($val){
+    -webkit-appearance:$val;
+    -moz-appearance:$val;
+    appearance:$val;
+}

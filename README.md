@@ -1,0 +1,1 @@
+A todo app built with Vanilla.js. Also consumed a free quote API. Sorting of todos works and todos save to local storage for later usage.

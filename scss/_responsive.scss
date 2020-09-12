@@ -1,0 +1,49 @@
+// media queries
+
+@media screen and (min-width: 799px) and (max-width: 801px) {
+    .todo-list{
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .todo-list{
+        width:50%;
+    }
+
+    .refresh{
+        button{
+            padding: 3% 5% !important ;
+        }
+    }
+
+    .quote-div{
+        h4{
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+
+
+    form{
+        padding: 3%;
+
+    }
+
+
+    .todo-input{
+        width: 40%;
+    }
+
+    .todo-list{
+        width:80%;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+}

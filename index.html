@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- bootstrap link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- font awesome css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>mytodo</title>
+    </head>
+
+    <body title="Todo app">
+
+        <header>
+            <h1>What to do 🤔</h1>
+            <div class="alert alert-success quote-div" role="alert">
+                <h4 class="alert-heading">🎉Well done!</h4>
+                <p class="quote-text" ></p>
+            </div>
+        </header>
+
+        <form role="form">
+            <input type="text" class="todo-input" role="input">
+            <button class="todo-btn" type="submit" role="button">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="todo-container">
+
+            <ul class="todo-list">
+
+            </ul>
+
+        </div>
+
+        <div class="refresh">
+            <button class="refresh-btn">CLEAR&nbsp;COMPLETED</button>
+        </div>
+
+       
+
+        <!-- bootstrap link -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- Font awesome script -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+
+        <!-- js link -->
+        <script type="text/javascript" src="js/index.js"></script>
+        
+    </body>
+
+</html>
